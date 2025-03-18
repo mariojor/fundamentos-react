@@ -2,6 +2,11 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+
+- **NPX** - Comando utilizado para baixar dependencias depois excluir por que sao pouco utilizadas automaticamente.
+
+### npx create-react-app fundamentos-react
+
 ## Available Scripts
 
 In the project directory, you can run:
