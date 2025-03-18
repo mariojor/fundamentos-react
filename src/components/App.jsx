@@ -12,6 +12,7 @@ import ListaAlunos from "./repeticao/ListaAlunos";
 import TabelaProdutos from "./repeticao/TabelaProdutos";
 import ParOuImpar from "./condicional/ParOuImpar";
 import UsuarioInfo from "./condicional/UsuarioInfo";
+import DiretaPai from "./comunicacao/DiretaPai";
 
 export default _ =>
     <div className='App'>
@@ -20,7 +21,7 @@ export default _ =>
 
         <div className="Cards">
             <Card titulo="#9 Comunicação Direta" color="#8BAD39">
-                
+                <DiretaPai />
             </Card>
             <Card titulo="#8 Redenrizacao Condicional" color="#982395">
                <ParOuImpar numero={1} />
