@@ -7,6 +7,11 @@ import Primeiro from './basicos/Primeiro';
 import Aleatorio from "./basicos/Aleatorio";
 import Card from "./layout/Card";
 import Familia from "./basicos/Familia";
+import FamiliaMembro from "./basicos/FamiliaMembro";
+import ListaAlunos from "./repeticao/ListaAlunos";
+import TabelaProdutos from "./repeticao/TabelaProdutos";
+import ParOuImpar from "./condicional/ParOuImpar";
+import UsuarioInfo from "./condicional/UsuarioInfo";
 
 export default _ =>
     <div className='App'>
@@ -14,8 +19,28 @@ export default _ =>
         <h1>Fundamentos React</h1>
 
         <div className="Cards">
+            <Card titulo="#9 Comunicação Direta" color="#8BAD39">
+                
+            </Card>
+            <Card titulo="#8 Redenrizacao Condicional" color="#982395">
+               <ParOuImpar numero={1} />
+               <UsuarioInfo usuario={{ nome: 'Mario' }} />
+               <UsuarioInfo usuario={{ nome: '' }} />
+               <UsuarioInfo usuario={{  }} />
+               <UsuarioInfo usuario={{ nome: 'Jow' }} />
+            </Card>
+            <Card titulo="#07 Desafio Repeticao" color="#FF4C65">
+                <TabelaProdutos />
+            </Card>
+            <Card titulo="#06 Repeticao" color="#FF4C65">
+                <ListaAlunos />
+            </Card>
             <Card titulo="#05 Componentes com Filhos" color="#00C8F8">
-                <Familia />
+                <Familia sobrenome="Paixao">
+                    <FamiliaMembro nome="Mario" />
+                    <FamiliaMembro nome="Klecia" />
+                    <FamiliaMembro nome="Mario Filho" />
+                </Familia>
             </Card>
             <Card titulo="#04 Exemplo de Card" color="#FA6900">
                 <Aleatorio min={1} max={100} />

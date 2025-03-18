@@ -1,0 +1,17 @@
+.TabelaProdutos table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.TabelaProdutos th {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    background-color: #008b8b;
+}
+
+.TabelaProdutos .Par {
+    background-color: #c9eec7;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+
+}
