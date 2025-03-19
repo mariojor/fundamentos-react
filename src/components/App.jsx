@@ -14,6 +14,8 @@ import ParOuImpar from "./condicional/ParOuImpar";
 import UsuarioInfo from "./condicional/UsuarioInfo";
 import DiretaPai from "./comunicacao/DiretaPai";
 import IndiretaPai from "./comunicacao/IndiretaPai";
+import Input from "./formulario/Input";
+import Contador from "./contador/Contador";
 
 export default _ =>
     <div className='App'>
@@ -21,6 +23,12 @@ export default _ =>
         <h1>Fundamentos React</h1>
 
         <div className="Cards">
+            <Card titulo="#12 Contador" color="#424242">
+                <Contador valorInicial={100} />
+            </Card>
+            <Card titulo="#11 Componente Controlado" color="#E45F56">
+                <Input />
+            </Card>
             <Card titulo="#10 Comunicação Indireta" color="#8C4646">
                 <IndiretaPai />
             </Card>
