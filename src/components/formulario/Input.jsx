@@ -15,10 +15,10 @@ export default props => {
             <div style={{
                 display: 'flex',
                 flexDirection: 'column'
-            }}> 
-             <input value={valor} onChange={quandoMudar}/>{/* Controlado */}
-            <input value={valor} readOnly/> {/* So leitura */}
-            <input value={undefined} /> {/* Nao controlado */}
+            }}>
+                <input value={valor} onChange={quandoMudar} />{/* Controlado */}
+                <input value={valor} readOnly /> {/* So leitura */}
+                <input value={undefined} /> {/* Nao controlado */}
             </div>
         </div>
     )
